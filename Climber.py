@@ -59,8 +59,6 @@ def advance_time_by_minutes(theTimeAmount):
 def advance_world():
     return 
 
-
-
 # Narrator actions
 
 def check_for_win(thePercent):
@@ -107,7 +105,7 @@ def player_climb_mountain():
     percent_up_mountain = percent_up_mountain + 10
     return
 
-def player_check(): 
+def player_check(): #This would be an iterator over player stats structure
     print("The time is: " + str(current_time.time()))
     print("Your energy is: " + str(player_energy))
     print("Your health is: " + str(player_health))

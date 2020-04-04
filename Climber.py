@@ -37,7 +37,6 @@ def adjust_player_energy(theEnergyAmount):
         player_energy = 100
     if player_energy <= 0:
         health_rollover = player_energy * -1
-        print(health_rollover)
         adjust_player_health(-health_rollover)
         player_energy = 0
         print("You feel exhausted.")
